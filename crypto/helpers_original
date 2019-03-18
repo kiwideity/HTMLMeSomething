@@ -1,0 +1,42 @@
+def alphabet_position(letter):
+    uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    #uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    lowercase = "abcdefghijklmnopqrstuvwxyz"
+    #lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+    if letter.isupper():
+        return uppercase.index(letter)
+    if letter.islower():
+        return lowercase.index(letter)
+    else:
+        return letter
+
+def rotate_character(text, rot):
+  uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+  lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+  new_list = ""
+  a = []
+  for i in text:
+    #num = alphabet_po
+    if i.isalpha() == False:
+    #print(char)
+      new_list += i
+
+    if i.isupper():
+      num = (alphabet_position(i) + rot)%26
+    #if i.isupper():
+    #print(uppercase[new_num])
+      new_list += (uppercase[num])
+
+    if i.islower():
+    #print(lowercase[new_num])
+      num = (alphabet_position(i) + rot)%26
+      new_list += (lowercase[num])
+
+  a.append(new_list)
+  #print(a)
+  #print(new_list)
+  return new_list
+  #print(new_list)
+#rotate_character('r',24)

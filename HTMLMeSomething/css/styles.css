@@ -37,31 +37,21 @@ body{
     font-weight:300;
 }
 
-.auto-style1 {
-	float: right;
-	width: 25%;
-	padding: 10px;
-	text-align: left;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.auto-style2 {
-	float: left;
-	width: 25%;
-	padding: 10px;
+
+#center{
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+#kiwi{
+	background-color:silver
 }
-.auto-style3 {
-	font-size: small;
+
+#me{
+	background-color:green
 }
-.auto-style4 {
+
+.style1 {
 	text-align: center;
 }
 
-.auto-style5 {
-	float: right;
-	width: 25%;
-	padding: 10px;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-}
+
